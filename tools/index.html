@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Software and tools tutorials by Tavinder Singh on Python utilities, post-processing, and reproducible workflows."
+  />
+  <title>Tavinder Singh | Software and Tools</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <script>
+    (function () {
+      var storedTheme = localStorage.getItem("site-theme");
+      var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      var theme = storedTheme || (prefersDark ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <link rel="icon" type="image/svg+xml" href="../images/logo-mark-atom.svg" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="../index.html" class="logo">
+        <img src="../images/logo-mark-atom.svg" alt="" class="logo-mark" />
+        <span class="logo-text">Tavinder Singh</span>
+      </a>
+      <div class="nav-cluster">
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../tutorials.html">Tutorials</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false">
+          <span class="theme-toggle-track">
+            <span class="theme-toggle-thumb"></span>
+          </span>
+          <span class="theme-toggle-text">Night Mode</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero page-hero-single topic-page-hero">
+      <div>
+        <p class="eyebrow">Software and Tools</p>
+      </div>
+    </section>
+
+    <section class="tutorial-notes-layout tutorial-notes-layout-compact">
+      <aside class="tutorial-sidebar card-surface">
+        <div class="tutorial-sidebar-header tutorial-document-header tutorial-document-header-compact">
+          <span class="status-pill">Contents</span>
+        </div>
+        <nav class="tutorial-toc" aria-label="Tutorial page sections">
+          <ul class="tutorial-toc-list"></ul>
+        </nav>
+      </aside>
+
+      <section class="tutorial-document card-surface tutorial-shell">
+        <div class="tutorial-document-header tutorial-document-header-compact">
+          <span class="status-pill">Notes</span>
+        </div>
+        <article class="markdown-content" data-markdown="content.md"></article>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      © 2026 Tavinder Singh | Built for research, code, and curiosity. Made with love
+      <span class="footer-heart" aria-label="love">♥</span>
+    </p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="../script.js"></script>
+  <script src="../tutorial-content.js"></script>
+</body>
+</html>
